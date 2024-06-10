@@ -11,6 +11,7 @@ Karya | ArtStation
   <thead>
     <tr>
         <th>Photo</th>
+        
         <th>Nama Karya</th>
         <th>Seniman</th>
         <th>Harga</th>
