@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("Asset/shop.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logout button{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+}
+main {
+  padding: 20px;
+  border-radius: 8px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .sales {
+    margin-top: 20px;
+  }
+  
+  #toggle-sales {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  #sales-table {
+    width: 100%;
+  }
+  
+  #sales-table th, #sales-table td {
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    padding: px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #sales-table th {
+    background-color: #19376D;
+    width:auto;
+  }
+  .edit-btn,
+  .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .edit-btn{
+    background-color: #36f462;
+    margin-right: 5px;
+  }
+
+
+.sales h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Container */
+.conten {
+  display: flex;
+  height: 15vh;
+}
+
+/* Tombol garis tiga */
+.sidebar-toggle {
+  background-color: rgba(255, 255, 255, 0);
+  display: block;
+  font-size: 40px;
+  padding: 7px 20px;
+  cursor: pointer;
+  border: none;
+  float: right;
+  position: fixed;
+  color: #fff;
+  z-index: 99999;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-250px); /* Menyembunyikan sidebar */
+  top: 70px;
+  left: 0px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 99998;
+}
+
+/* Daftar di sidebar */
+.sidebar ul {
+  margin-left: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Gaya tautan di sidebar */
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Warna hover pada tautan */
+.sidebar a:hover {
+  background-color: #0B2447;
+}
+
+/* Konten utama */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+  /* Mengatur sidebar agar terbuka saat tombol ditekan */
+  .sidebar.open {
+      transform: translateX(0);
+      background-color: #19376D;
+  }
+  .menu-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: #19376D;
+    z-index: 1000;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+  }
+  /* Form Container */
+#add-artwork-form {
+  background-color: #f9f9f9; /* Warna latar belakang form */
+  padding: 30px; /* Padding di dalam form */
+  border-radius: 10px; /* Membuat sudut form melengkung */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  max-width: 600px; /* Lebar maksimal form */
+  margin: 20px auto; /* Memposisikan form di tengah */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font keluarga */
+}
+
+/* Form Labels */
+#add-artwork-form label {
+  display: block; /* Menampilkan label sebagai blok */
+  margin-bottom: 8px; /* Jarak bawah label */
+  font-weight: bold; /* Membuat teks label tebal */
+  color: #19376D; /* Warna teks label */
+}
+
+/* Form Inputs */
+#add-artwork-form input[type="text"] {
+  width: 100%; /* Lebar penuh input */
+  padding: 12px; /* Padding di dalam input */
+  margin-bottom: 20px; /* Jarak bawah input */
+  border: 1px solid #ccc; /* Warna border input */
+  border-radius: 5px; /* Membuat sudut input melengkung */
+  box-sizing: border-box; /* Menggunakan model kotak border */
+  font-size: 16px; /* Ukuran font */
+  background-color: #fff; /* Warna latar belakang input */
+  transition: border-color 0.3s ease; /* Transisi untuk border */
+}
+
+#add-artwork-form input[type="text"]:focus {
+  border-color: #19376D; /* Warna border saat fokus */
+  outline: none; /* Menghilangkan outline */
+}
+
+/* Submit Button */
+#add-artwork-form button[type="submit"] {
+  background-color: #19376D; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  padding: 12px 20px; /* Padding di dalam tombol */
+  border: none; /* Menghilangkan border */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Menampilkan kursor pointer */
+  font-size: 16px; /* Ukuran font */
+  transition: background-color 0.3s ease; /* Transisi untuk hover */
+}
+
+#add-artwork-form button[type="submit"]:hover {
+  background-color: #1452a5; /* Warna latar belakang tombol saat hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #add-artwork-form {
+      padding: 20px; /* Padding lebih kecil di perangkat kecil */
+  }
+
+  #add-artwork-form label {
+      font-size: 14px; /* Ukuran font lebih kecil di perangkat kecil */
+  }
+
+  #add-artwork-form input[type="text"] {
+      padding: 10px; /* Padding lebih kecil di input */
+      font-size: 14px; /* Ukuran font lebih kecil di input */
+  }
+
+  #add-artwork-form button[type="submit"] {
+      padding: 10px 16px; /* Padding lebih kecil di tombol */
+      font-size: 14px; /* Ukuran font lebih kecil di tombol */
+  }
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Arial', sans-serif; /* Atur font untuk h1 */
+}
+.logout button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+}
+.widget-container {
+  display:flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.widget {
+  background-color: cornflowerblue;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  font-family: 'Arial', sans-serif; /* Atur font untuk widget */
+}
+.widget h3 {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif; /* Atur font untuk h3 dalam widget */
+}
+.widget p {
+  margin: 10px 0 0;
+  font-size: 60px;
+  font-family:fantasy /* Atur font untuk p dalam widget */
+}
+
+
+#sales-table {
+  width: 100%;
+}
+#sales-table th, #sales-table td {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+#sales-table th {
+  background-color: #19376D;
+  width:auto;
+}
+.btn-edit,
+.btn-delete {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-edit {
+  background-color: #36f462;
+  margin-right: 5px;
+}
+.btn-print {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  float: left;
+}
+/* CSS untuk pesan alert */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.btn-cetak {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  float: right;
+}
